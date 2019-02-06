@@ -378,29 +378,29 @@ public class Charm
             this.height = m_height;
         }
 
-        public void DrawLine(float x1, float y1, float x2, float y2, float thickness, System.Drawing.Color color)
+        public void DrawLine(float x1, float y1, float x2, float y2, float thickness, UnityEngine.Color32 color)
         {
-            Renderer.DrawLine(x1, y1, x2, y2, thickness, ByteToFloat(color.R), ByteToFloat(color.G), ByteToFloat(color.B));
+            Renderer.DrawLine(x1, y1, x2, y2, thickness, ByteToFloat(color.r), ByteToFloat(color.g), ByteToFloat(color.b));
         }
 
-        public void DrawBox(float x, float y, float width, float height, float thickness, System.Drawing.Color color, bool filled)
+        public void DrawBox(float x, float y, float width, float height, float thickness, UnityEngine.Color32 color, bool filled)
         {
-            Renderer.DrawBox(x, y, width, height, thickness, ByteToFloat(color.R), ByteToFloat(color.G), ByteToFloat(color.B), ByteToFloat(color.A), filled);
+            Renderer.DrawBox(x, y, width, height, thickness, ByteToFloat(color.r), ByteToFloat(color.g), ByteToFloat(color.b), ByteToFloat(color.a), filled);
         }
 
-        public void DrawCircle(float x, float y, float radius, float thickness, System.Drawing.Color color, bool filled)
+        public void DrawCircle(float x, float y, float radius, float thickness, UnityEngine.Color32 color, bool filled)
         {
-            Renderer.DrawCircle(x, y, radius, thickness, ByteToFloat(color.R), ByteToFloat(color.G), ByteToFloat(color.B), ByteToFloat(color.A), filled);
+            Renderer.DrawCircle(x, y, radius, thickness, ByteToFloat(color.r), ByteToFloat(color.g), ByteToFloat(color.b), ByteToFloat(color.a), filled);
         }
 
-        public void DrawEllipse(float x, float y, float width, float height, float thickness, System.Drawing.Color color, bool filled)
+        public void DrawEllipse(float x, float y, float width, float height, float thickness, UnityEngine.Color32 color, bool filled)
         {
-            Renderer.DrawEllipse(x, y, width, height, thickness, ByteToFloat(color.R), ByteToFloat(color.G), ByteToFloat(color.B), ByteToFloat(color.A), filled);
+            Renderer.DrawEllipse(x, y, width, height, thickness, ByteToFloat(color.r), ByteToFloat(color.g), ByteToFloat(color.b), ByteToFloat(color.a), filled);
         }
 
-        public void DrawString(float x, float y, string text, System.Drawing.Color color, float fontsize = 24)
+        public void DrawString(float x, float y, string text, UnityEngine.Color32 color, float fontsize = 24)
         {
-            Renderer.DrawString(text, fontsize, x, y, ByteToFloat(color.R), ByteToFloat(color.G), ByteToFloat(color.B));
+            Renderer.DrawString(text, fontsize, x, y, ByteToFloat(color.r), ByteToFloat(color.g), ByteToFloat(color.b));
         }
 
         // convert world-space coordinates to screen-space coordinates
